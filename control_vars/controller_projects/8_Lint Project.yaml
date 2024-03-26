@@ -1,0 +1,15 @@
+---
+controller_projects:
+  - name: "Lint Project"
+    description: ""
+    organization: "Default"
+    scm_type: "git"
+    scm_url: "https://github.com/pankajc80/project-lint.git"
+    scm_branch: "dev"
+    scm_clean: "False"
+    scm_delete_on_update: "False"
+    scm_update_on_launch: "True"
+    scm_update_cache_timeout: "0"
+    allow_override: "False"
+    timeout: 0
+...

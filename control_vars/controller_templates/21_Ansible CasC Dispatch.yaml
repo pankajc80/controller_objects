@@ -1,0 +1,71 @@
+---
+controller_templates:
+  - name: "Ansible CasC Dispatch"
+    description: ""
+    organization: "Sorint"
+    project: "Ansible CasC Project"
+    inventory: "Demo Inventory"
+    playbook: "readispatch.yml"
+    scm_branch: ""
+    forks: 0
+    limit: ""
+    verbosity: 0
+    job_type: "run"
+    job_slice_count: 1
+    use_fact_cache: False
+    allow_simultaneous: False
+    ask_scm_branch_on_launch: False
+    ask_diff_mode_on_launch: False
+    ask_tags_on_launch: False
+    ask_skip_tags_on_launch: False
+    ask_job_type_on_launch: False
+    ask_verbosity_on_launch: False
+    ask_variables_on_launch: False
+    ask_inventory_on_launch: False
+    ask_limit_on_launch: False
+    ask_credential_on_launch: False
+    ask_execution_environment_on_launch: False
+    ask_labels_on_launch: False
+    ask_forks_on_launch: False
+    ask_job_slice_count_on_launch: False
+    ask_timeout_on_launch: False
+    ask_instance_groups_on_launch: False
+    job_tags: ""
+    force_handlers: False
+    skip_tags: ""
+    start_at_task: ""
+    timeout: 0
+    host_config_key: ""
+    survey_enabled: True
+    survey_spec:
+      description: ''
+      name: ''
+      spec:
+      - choices: ''
+        default: ''
+        max: 1024
+        min: 0
+        new_question: true
+        question_description: ''
+        question_name: Provide GitHub Token
+        required: true
+        type: password
+        variable: githubtoken
+      - choices:
+        - job_templates
+        default: job_templates
+        max: 1024
+        min: 0
+        new_question: false
+        question_description: ''
+        question_name: Select one or more objects to deploy
+        required: true
+        type: multiplechoice
+        variable: input_tag
+
+    become_enabled: False
+    diff_mode: False
+    webhook_service: "github"
+    webhook_credential: "7"
+    prevent_instance_group_fallback: False
+...
